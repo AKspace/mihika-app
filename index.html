@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MIHIKA — Privacy Policy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --brand-primary: #C2717A;
+      --brand-light: #F7EEF0;
+      --brand-dark: #8B3D45;
+      --neutral-900: #1A1014;
+      --neutral-700: #4A3840;
+      --neutral-500: #7A6870;
+      --neutral-200: #E8DFE2;
+      --neutral-50: #FDF8FF;
+      --font-display: 'Cormorant Garamond', serif;
+      --font-body: 'DM Sans', sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-body);
+      background-color: var(--neutral-50);
+      color: var(--neutral-700);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    /* HEADER */
+    header {
+      background: var(--neutral-50);
+      border-bottom: 1px solid var(--neutral-200);
+      padding: 24px 0;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .header-inner {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-mark {
+      width: 32px;
+      height: 40px;
+      flex-shrink: 0;
+    }
+
+    .logo-name {
+      font-family: var(--font-display);
+      font-size: 22px;
+      font-weight: 500;
+      color: var(--neutral-900);
+      letter-spacing: 0.04em;
+    }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(160deg, var(--brand-light) 0%, var(--neutral-50) 60%);
+      padding: 72px 24px 56px;
+      text-align: center;
+    }
+
+    .hero-eyebrow {
+      font-family: var(--font-body);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--brand-primary);
+      margin-bottom: 16px;
+    }
+
+    .hero-title {
+      font-family: var(--font-display);
+      font-size: clamp(36px, 6vw, 52px);
+      font-weight: 300;
+      color: var(--neutral-900);
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+
+    .hero-title em {
+      font-style: italic;
+      color: var(--brand-primary);
+    }
+
+    .hero-subtitle {
+      font-size: 15px;
+      color: var(--neutral-500);
+      max-width: 480px;
+      margin: 0 auto 32px;
+    }
+
+    .hero-meta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: white;
+      border: 1px solid var(--neutral-200);
+      border-radius: 100px;
+      padding: 8px 20px;
+      font-size: 13px;
+      color: var(--neutral-500);
+    }
+
+    .hero-meta span {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--brand-primary);
+      display: inline-block;
+    }
+
+    /* COMMITMENT CARDS */
+    .commitments {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 56px 24px 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+    }
+
+    .commitment-card {
+      background: white;
+      border: 1px solid var(--neutral-200);
+      border-radius: 12px;
+      padding: 24px;
+      text-align: center;
+    }
+
+    .commitment-icon {
+      font-size: 28px;
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    .commitment-title {
+      font-family: var(--font-display);
+      font-size: 18px;
+      font-weight: 500;
+      color: var(--neutral-900);
+      margin-bottom: 6px;
+    }
+
+    .commitment-desc {
+      font-size: 13px;
+      color: var(--neutral-500);
+      line-height: 1.5;
+    }
+
+    /* MAIN CONTENT */
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 56px 24px 80px;
+    }
+
+    .section {
+      margin-bottom: 48px;
+      padding-bottom: 48px;
+      border-bottom: 1px solid var(--neutral-200);
+    }
+
+    .section:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+
+    .section-number {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--brand-primary);
+      margin-bottom: 8px;
+    }
+
+    .section-title {
+      font-family: var(--font-display);
+      font-size: 28px;
+      font-weight: 400;
+      color: var(--neutral-900);
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
+
+    p {
+      font-size: 15px;
+      color: var(--neutral-700);
+      margin-bottom: 16px;
+      line-height: 1.75;
+    }
+
+    p:last-child { margin-bottom: 0; }
+
+    .highlight-box {
+      background: var(--brand-light);
+      border-left: 3px solid var(--brand-primary);
+      border-radius: 0 8px 8px 0;
+      padding: 20px 24px;
+      margin: 24px 0;
+    }
+
+    .highlight-box p {
+      color: var(--brand-dark);
+      margin-bottom: 0;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    ul {
+      list-style: none;
+      margin: 16px 0;
+      padding: 0;
+    }
+
+    ul li {
+      font-size: 15px;
+      color: var(--neutral-700);
+      padding: 8px 0 8px 28px;
+      position: relative;
+      border-bottom: 1px solid var(--neutral-200);
+      line-height: 1.6;
+    }
+
+    ul li:last-child { border-bottom: none; }
+
+    ul li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 16px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--brand-primary);
+      opacity: 0.6;
+    }
+
+    .contact-box {
+      background: white;
+      border: 1px solid var(--neutral-200);
+      border-radius: 12px;
+      padding: 32px;
+      text-align: center;
+    }
+
+    .contact-box .contact-title {
+      font-family: var(--font-display);
+      font-size: 22px;
+      font-weight: 400;
+      color: var(--neutral-900);
+      margin-bottom: 8px;
+    }
+
+    .contact-box p {
+      font-size: 14px;
+      color: var(--neutral-500);
+      margin-bottom: 20px;
+    }
+
+    .contact-email {
+      display: inline-block;
+      background: var(--brand-primary);
+      color: white;
+      text-decoration: none;
+      padding: 12px 28px;
+      border-radius: 100px;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      transition: background 0.2s;
+    }
+
+    .contact-email:hover { background: var(--brand-dark); }
+
+    /* FOOTER */
+    footer {
+      border-top: 1px solid var(--neutral-200);
+      padding: 32px 24px;
+      text-align: center;
+    }
+
+    .footer-inner {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .footer-logo {
+      font-family: var(--font-display);
+      font-size: 18px;
+      font-weight: 500;
+      color: var(--neutral-900);
+      margin-bottom: 8px;
+    }
+
+    .footer-tagline {
+      font-size: 13px;
+      color: var(--neutral-500);
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 480px) {
+      .commitments { grid-template-columns: 1fr; }
+      .hero { padding: 48px 20px 40px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <svg class="logo-mark" viewBox="0 0 32 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M16 2C16 2 4 14 4 24C4 31.2 9.4 37 16 37C22.6 37 28 31.2 28 24C28 14 16 2 16 2Z" fill="#C2717A" opacity="0.15"/>
+        <path d="M16 6C16 6 6 16.5 6 24C6 30.1 10.5 35 16 35C21.5 35 26 30.1 26 24C26 16.5 16 6 16 6Z" stroke="#C2717A" stroke-width="1.5" fill="none"/>
+        <circle cx="16" cy="24" r="3" fill="#C2717A"/>
+      </svg>
+      <span class="logo-name">MIHIKA</span>
+    </div>
+  </header>
+
+  <section class="hero">
+    <p class="hero-eyebrow">Legal · Privacy</p>
+    <h1 class="hero-title">Your data belongs<br/><em>to you.</em></h1>
+    <p class="hero-subtitle">MIHIKA was built on a simple promise — your health information never leaves your phone without your permission.</p>
+    <div class="hero-meta">
+      <span></span>
+      Last updated: January 2026
+    </div>
+  </section>
+
+  <div class="commitments">
+    <div class="commitment-card">
+      <span class="commitment-icon">📱</span>
+      <div class="commitment-title">On-device only</div>
+      <p class="commitment-desc">All your data lives on your phone. We have no servers storing your information.</p>
+    </div>
+    <div class="commitment-card">
+      <span class="commitment-icon">🔒</span>
+      <div class="commitment-title">Encrypted</div>
+      <p class="commitment-desc">Your data is encrypted with AES-256 — the same standard used by banks.</p>
+    </div>
+    <div class="commitment-card">
+      <span class="commitment-icon">🚫</span>
+      <div class="commitment-title">Never shared</div>
+      <p class="commitment-desc">We do not sell, share, or transmit your health data to anyone, ever.</p>
+    </div>
+  </div>
+
+  <main>
+
+    <div class="section">
+      <p class="section-number">01</p>
+      <h2 class="section-title">Who we are</h2>
+      <p>MIHIKA is a women's health and menstrual tracking application developed and operated under the MIHIKA brand, India. This Privacy Policy explains how MIHIKA handles your personal information when you use our mobile application.</p>
+      <p>For any privacy-related questions, you can contact us at the address provided at the end of this document.</p>
+    </div>
+
+    <div class="section">
+      <p class="section-number">02</p>
+      <h2 class="section-title">What data MIHIKA collects</h2>
+      <div class="highlight-box">
+        <p>MIHIKA does not collect, transmit, or store any of your data on external servers. All data you enter into the app stays on your device.</p>
+      </div>
+      <p>The following information is stored locally on your device only:</p>
+      <ul>
+        <li>Menstrual cycle dates — period start and end dates you log</li>
+        <li>Daily mood entries — mood scale and emotion tags you select</li>
+        <li>Symptom logs — symptoms and severity you record</li>
+        <li>Health tracking data — BBT, OPK results, cervical mucus observations if you choose to log these</li>
+        <li>App preferences — notification settings, persona mode, display preferences</li>
+        <li>Backup files — encrypted copies of your data stored in your own iCloud or Google Drive account</li>
+      </ul>
+      <p>We do not have access to any of the above. It lives entirely on your device and, if you choose to back it up, in your own personal cloud storage account.</p>
+    </div>
+
+    <div class="section">
+      <p class="section-number">03</p>
+      <h2 class="section-title">How your data is stored and protected</h2>
+      <p>All data entered into MIHIKA is stored in an encrypted SQLite database on your device. We use AES-256-GCM encryption — a military-grade standard — to protect your data at rest.</p>
+      <p>If you choose to back up your data to iCloud or Google Drive, the backup file is encrypted before it leaves your device using the same AES-256-GCM standard. The encryption key is stored in your device's secure hardware — Keychain on iOS and Keystore on Android. We never have access to your encryption key or your backup files.</p>
+      <p>Your backup files are stored in your own personal cloud account, under your own credentials. MIHIKA never has access to your cloud storage.</p>
+    </div>
+
+    <div class="section">
+      <p class="section-number">04</p>
+      <h2 class="section-title">Data we do not collect</h2>
+      <p>To be completely clear, MIHIKA does not collect:</p>
+      <ul>
+        <li>Your name, email address, or any account information</li>
+        <li>Your location or GPS data</li>
+        <li>Device identifiers or advertising IDs</li>
+        <li>Usage analytics or behavioural tracking</li>
+        <li>Crash reports sent to external servers</li>
+        <li>Any data for advertising purposes</li>
+        <li>Any data shared with third parties</li>
+      </ul>
+      <p>MIHIKA requires no account to use. You are not a user in any database. We simply do not know you exist.</p>
+    </div>
+
+    <div class="section">
+      <p class="section-number">05</p>
+      <h2 class="section-title">Children and users under 18</h2>
+      <p>MIHIKA is available to users aged 13 and above. We recognise that younger users have heightened privacy needs and we have designed the app accordingly.</p>
+      <p>For users under 18, MIHIKA offers a discreet mode that disguises the app's appearance on their device. Because we collect no data and have no accounts or servers, we have no way to identify whether a user is a minor — and we have no data about them regardless.</p>
+      <p>Parents and guardians who have concerns about their child using MIHIKA should know that the app stores all information locally on the child's device only. No information is accessible to us or any third party.</p>
+      <p>In compliance with applicable Indian law under the Digital Personal Data Protection Act 2023, we do not knowingly process personal data of children in a way that causes harm or involves tracking, behavioural monitoring, or targeted advertising.</p>
+    </div>
+
+    <div class="section">
+      <p class="section-number">06</p>
+      <h2 class="section-title">Your rights under DPDPA 2023</h2>
+      <p>Under India's Digital Personal Data Protection Act 2023, you have the following rights regarding your personal data:</p>
+      <ul>
+        <li>Right to access — you can view all your data within the app at any time</li>
+        <li>Right to correction — you can edit any entry in the app at any time</li>
+        <li>Right to erasure — you can delete all your data from the app in Me → Privacy → Delete all data. This is immediate and permanent.</li>
+        <li>Right to data portability — you can export all your data in CSV or JSON format from Me → Data Export at any time</li>
+        <li>Right to withdraw consent — you can stop using the app and delete all data at any time. No action on our part is required because we hold no data.</li>
+      </ul>
+      <p>Because MIHIKA holds no data on our servers, most of these rights are exercised directly within the app rather than through a request to us. If you need assistance, contact us using the details below.</p>
+    </div>
+
+    <div class="section">
+      <p class="section-number">07</p>
+      <h2 class="section-title">Third-party services</h2>
+      <p>MIHIKA uses the following platform services which have their own privacy policies:</p>
+      <ul>
+        <li>Apple iCloud — used only if you choose to back up your data. Subject to Apple's Privacy Policy.</li>
+        <li>Google Drive — used only if you choose to back up your data on Android. Subject to Google's Privacy Policy.</li>
+        <li>Google Calendar — used only if you choose to export predicted dates to your calendar. Subject to Google's Privacy Policy.</li>
+        <li>Apple Calendar — used only if you choose to export predicted dates to your calendar on iOS. Subject to Apple's Privacy Policy.</li>
+      </ul>
+      <p>All of the above integrations are optional and user-initiated. MIHIKA never automatically sends data to any of these services without your explicit action.</p>
+    </div>
+
+    <div class="section">
+      <p class="section-number">08</p>
+      <h2 class="section-title">Changes to this policy</h2>
+      <p>If we make material changes to this Privacy Policy, we will update the date at the top of this page and notify you within the app on your next launch. Continued use of MIHIKA after a policy update constitutes acceptance of the updated policy.</p>
+      <p>We will never change our core commitment: your health data stays on your device and is never shared with us or anyone else.</p>
+    </div>
+
+    <div class="section">
+      <p class="section-number">09</p>
+      <h2 class="section-title">Medical disclaimer</h2>
+      <p>MIHIKA is a personal health tracking tool. It is not a medical device and does not provide medical advice, diagnosis, or treatment. Cycle predictions, fertile window estimates, and health insights provided by the app are for personal awareness only.</p>
+      <p>Do not use MIHIKA as a contraceptive tool. Consult a qualified healthcare provider for medical advice related to your reproductive health.</p>
+    </div>
+
+    <div class="section">
+      <p class="section-number">10</p>
+      <h2 class="section-title">Contact us</h2>
+      <div class="contact-box">
+        <p class="contact-title">Privacy questions?</p>
+        <p>If you have any questions about this Privacy Policy or how MIHIKA handles your data, we are happy to help.</p>
+        <a href="mailto:privacy@mihika.health" class="contact-email">privacy@mihika.health</a>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <p class="footer-logo">MIHIKA</p>
+      <p class="footer-tagline">Your cycle. Your data. Your privacy.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
